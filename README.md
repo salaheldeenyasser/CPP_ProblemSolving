@@ -1,82 +1,79 @@
-# C++ Problem Solving
+# CPP Problem Solving
 
-A collection of solutions to algorithmic problems from popular coding platforms, implemented in C++. This repository serves as a learning resource and a reference for solving common coding interview questions and competitive programming challenges.
+This repository contains C++ solutions for coding interview and competitive programming problems from different platforms.
 
-## 📂 Repository Structure
+## Overview
 
-```
+- Platform-based organization: LeetCode, HackerRank, and NeetCode
+- One folder per problem (for most entries)
+- Focus on clean, readable C++ solutions
+
+## Repository Structure
+
+```text
 CPP_ProblemSolving/
-├── LeetCode/          # LeetCode problem solutions
-├── HackerRank/        # HackerRank problem solutions
-└── README.md
+|-- LeetCode/
+|   |-- 1_TwoSum/
+|   |-- 11_ContainerWithMostWater/
+|   |-- 20_ValidParentheses/
+|   |-- 151_ReverseWordsInAString/
+|   |-- 191_Numberof1Bits/
+|   `-- README.md
+|-- HackerRank/
+|   |-- 01_.cpp
+|   `-- README.md
+|-- NeetCode/
+|   |-- 01_ContainsDuplicate/
+|   `-- README.md
+`-- README.md
 ```
 
-## 🎯 LeetCode Solutions
+## Solved Problems
 
-| # | Problem | Difficulty | Tags |
-|---|---------|------------|------|
-| 1 | [Two Sum](LeetCode/1_TwoSum) | Easy | Array, Hash Table |
-| 11 | [Container With Most Water](LeetCode/11_ContainerWithMostWater) | Medium | Array, Two Pointers |
-| 20 | [Valid Parentheses](LeetCode/20_ValidParentheses) | Easy | String, Stack |
-| 151 | [Reverse Words in a String](LeetCode/151_ReverseWordsInAString) | Medium | String |
-| 191 | [Number of 1 Bits](LeetCode/191_Numberof1Bits) | Easy | Bit Manipulation |
+### LeetCode
 
-## 🎯 HackerRank Solutions
+| # | Problem | Folder |
+|---|---------|--------|
+| 1 | Two Sum | [LeetCode/1_TwoSum](LeetCode/1_TwoSum) |
+| 11 | Container With Most Water | [LeetCode/11_ContainerWithMostWater](LeetCode/11_ContainerWithMostWater) |
+| 20 | Valid Parentheses | [LeetCode/20_ValidParentheses](LeetCode/20_ValidParentheses) |
+| 151 | Reverse Words in a String | [LeetCode/151_ReverseWordsInAString](LeetCode/151_ReverseWordsInAString) |
+| 191 | Number of 1 Bits | [LeetCode/191_Numberof1Bits](LeetCode/191_Numberof1Bits) |
 
-- Problem solutions available in the [HackerRank/](HackerRank) directory
+### NeetCode
 
-## 🚀 Getting Started
+| # | Problem | Folder |
+|---|---------|--------|
+| 1 | Contains Duplicate | [NeetCode/01_ContainsDuplicate](NeetCode/01_ContainsDuplicate) |
 
-### Prerequisites
-- C++ compiler (GCC, Clang, or MSVC)
-- Make (optional, for compilation scripts)
+### HackerRank
 
-### Compiling and Running
+Current files are under [HackerRank](HackerRank). This section can be expanded as folder-based solutions are added.
 
-Each problem directory contains a `main.cpp` file with the solution. To compile and run:
+## How to Compile and Run
+
+Use any modern C++ compiler (GCC/Clang/MSVC). Example with GCC:
 
 ```bash
-cd LeetCode/1_TwoSum/
-g++ -o main main.cpp
+cd LeetCode/1_TwoSum
+g++ -std=c++17 -O2 -Wall -Wextra -pedantic main.cpp -o main
 ./main
 ```
 
-Or using a C++ compiler of your choice:
-```bash
-clang++ -o main main.cpp  # Using Clang
-cl main.cpp               # Using MSVC on Windows
-```
+## Recommended Naming Convention
 
-## 📝 Structure of Each Problem
+- Problem folder: `ProblemNumber_ProblemName`
+- Main source file: `main.cpp`
+- Optional explanation file: `README.md`
 
-Each problem directory typically contains:
-- **main.cpp** - The C++ solution implementation
-- **README.md** - Problem description, examples, constraints, and explanation
+## Adding a New Solution
 
-## 🎓 Topics Covered
+1. Create a new folder inside the correct platform directory.
+2. Add `main.cpp` with your solution.
+3. Add a short `README.md` for approach and complexity (optional but recommended).
+4. Update this root README problem list.
 
-- **Data Structures**: Arrays, Hash Tables, Stacks, Strings
-- **Algorithms**: Two Pointers, Sliding Window, Bit Manipulation
-- **Problem Solving**: Pattern recognition, optimization techniques
+## Notes
 
-## 💡 Contributing
-
-To add new solutions:
-1. Create a folder with the problem name and number (e.g., `2_AddTwoNumbers/`)
-2. Add `main.cpp` with your solution
-3. Add `README.md` with problem description and approach
-4. Update this main README with the new entry
-
-## 📚 Resources
-
-- [LeetCode](https://leetcode.com)
-- [HackerRank](https://www.hackerrank.com)
-- [C++ Documentation](https://cppreference.com)
-
-## 📄 License
-
-This repository is open for educational purposes. Problem statements belong to their respective platforms (LeetCode, HackerRank, etc.).
-
----
-
-**Happy Coding!** 🎉
+- This project is intended for learning and interview preparation.
+- Problem statements belong to their respective platforms.

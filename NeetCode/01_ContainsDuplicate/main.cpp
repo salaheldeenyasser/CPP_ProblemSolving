@@ -1,9 +1,14 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
+#include <set>
 using namespace std;
 
-// Given an integer array nums, return true if any value appears at least twice in the array, and return false if every element is distinct.
+/*
+** Given an integer array nums, 
+** return true if any value appears at least twice in the array, 
+** and return false if every element is distinct.
+*/
 
 // Solution 1: Brute Force
 // Time Complexity: O(n^2) - We have two nested loops to compare each element with every other element.
@@ -44,6 +49,22 @@ public:
 };
 #endif
 
+// Solution 3: Set
+// Time Complexity: O(n) - We iterate through the array once to check for duplicates, and each insertion and lookup operation in the set takes O(1) on average.
+// Space Complexity: O(n) - In the worst case, if all elements are distinct, we will store all n elements in the set, resulting in O(n) space complexity.
+#if 1
+class Solution {
+public:
+    bool hasDuplicate(vector<int>& nums) {
+        set<int> seen;
+        for(int x : nums){
+            if(seen.count(x)) return true;
+            seen.insert(x);
+        }
+        return false;
+    }
+};
+#endif
 
 
 

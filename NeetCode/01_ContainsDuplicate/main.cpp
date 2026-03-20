@@ -2,6 +2,7 @@
 #include <vector>
 #include <algorithm>
 #include <set>
+#include <unordered_set> 
 using namespace std;
 
 /*
@@ -50,13 +51,30 @@ public:
 #endif
 
 // Solution 3: Set
-// Time Complexity: O(n) - We iterate through the array once to check for duplicates, and each insertion and lookup operation in the set takes O(1) on average.
+// Time Complexity: O(n log n) - We iterate through the array once to check for duplicates, and each insertion and lookup operation in the set takes O(log n) on average.
 // Space Complexity: O(n) - In the worst case, if all elements are distinct, we will store all n elements in the set, resulting in O(n) space complexity.
 #if 1
 class Solution {
 public:
     bool hasDuplicate(vector<int>& nums) {
         set<int> seen;
+        for(int x : nums){
+            if(seen.count(x)) return true;
+            seen.insert(x);
+        }
+        return false;
+    }
+};
+#endif
+
+// Solution 4: Unordered Set
+// Time Complexity: O(n) - We iterate through the array once to check for duplicates, and each insertion and lookup operation in the unordered set takes O(1) on average.
+// Space Complexity: O(n) - In the worst case, if all elements are distinct, we will store all n elements in the unordered set, resulting in O(n) space complexity.
+#if 1
+class Solution {
+public:
+    bool hasDuplicate(vector<int>& nums) {
+        unordered_set<int> seen;
         for(int x : nums){
             if(seen.count(x)) return true;
             seen.insert(x);

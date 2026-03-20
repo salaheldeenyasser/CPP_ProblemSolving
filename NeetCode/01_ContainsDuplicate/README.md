@@ -20,19 +20,54 @@ Given an integer array `nums`, return `true` if any value appears more than once
 - Input: `nums = [1, 2, 3, 4]`
 - Output: `false`
 
-## Approach
+## Solutions
 
-Use a set to track values seen so far:
+This problem can be solved in multiple ways. The implementation file includes all approaches below.
 
-1. Iterate through the array.
-2. If the current value is already in the set, return `true`.
-3. Otherwise, insert it into the set.
-4. If the loop ends, return `false`.
+### 1. Brute Force
 
-## Complexity
+Compare every pair of elements using two nested loops.
 
-- Time: `O(n)` on average
+- Idea: If any `nums[i] == nums[j]` for `i < j`, return `true`.
+- Best for: Learning and very small inputs.
+- Time: `O(n^2)`
+- Space: `O(1)`
+
+### 2. Sorting
+
+Sort the array, then check adjacent elements.
+
+- Idea: After sorting, duplicates become neighbors.
+- Best for: Cases where modifying input is acceptable.
+- Time: `O(n log n)`
+- Space: `O(1)` extra (depends on sort implementation details)
+
+### 3. Ordered Set (`set`)
+
+Insert elements into a balanced BST-based set.
+
+- Idea: If an element is already in the set, a duplicate exists.
+- Best for: When ordered uniqueness structure is preferred.
+- Time: `O(n log n)`
 - Space: `O(n)`
+
+### 4. Unordered Set (`unordered_set`)
+
+Track seen elements in a hash set.
+
+- Idea: Hash lookup lets us detect repeats quickly.
+- Best for: Typical interview/production choice for this problem.
+- Time: `O(n)` average
+- Space: `O(n)`
+
+## Complexity Summary
+
+| Approach | Time | Space |
+|---|---|---|
+| Brute Force | `O(n^2)` | `O(1)` |
+| Sorting | `O(n log n)` | `O(1)` extra |
+| `set` | `O(n log n)` | `O(n)` |
+| `unordered_set` | `O(n)` average | `O(n)` |
 
 ## C++ File
 

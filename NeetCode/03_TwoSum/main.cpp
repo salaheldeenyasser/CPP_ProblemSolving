@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <unordered_map>
 
 using namespace std;
 /*
@@ -23,6 +24,30 @@ public:
             }
         }
         return{};
+    }
+};
+#endif
+
+
+#if 1
+// Solution 2: Two Pass Hash Table
+// Time Complexity: O(n) - We iterate through the array twice, which takes O(n) time.
+// Space Complexity: O(n) - We use a hash table to store the elements we have seen so far, which takes O(n) space.
+class Solution {
+public:
+    std::vector<int> twoSum(std::vector<int>& nums, int target) {
+        std::unordered_map<int, int> seen;
+
+        for (int i = 0; i < nums.size(); ++i) {
+            int complement = target - nums[i];
+            
+            if (seen.count(complement)) {
+                return {seen[complement], i};
+            }
+
+            seen[nums[i]] = i;
+        }
+        return {};
     }
 };
 #endif

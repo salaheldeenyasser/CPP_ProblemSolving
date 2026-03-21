@@ -16,7 +16,20 @@ using namespace std;
 // Solution 1: Brute Force
 // Time Complexity: O(n^2) - We have two nested loops to check each pair of numbers, which takes O(n^2) time.
 // Space Complexity: O(1) - We are not using any additional data structures, so the space complexity is constant.
-#if 0
+#if 1
+class Solution {
+public:
+    vector<int> twoSum(vector<int>& nums, int target) {
+        for (int i = 0; i < nums.size(); i++){
+            for (int j = i+1; j < nums.size(); j++){
+                if(nums[i]+nums[j] == target){
+                    return {i,j};
+                }
+            }
+        }
+        return{};
+    }
+};
 #endif
 
 // Solution 2: Two Pass Hash Table
@@ -30,7 +43,7 @@ public:
         for (int i = 0; i < nums.size(); ++i) {
             int complement = target - nums[i];
             
-            if (seen.find(complement) != seen.end()) {
+            if (seen.count(complement)) {
                 return {seen[complement], i};
             }
 

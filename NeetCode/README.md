@@ -15,13 +15,15 @@ Each problem is organized in its own directory:
 | # | Problem | Folder |
 |---|---------|--------|
 | 1 | Contains Duplicate | [01_ContainsDuplicate](01_ContainsDuplicate) |
+| 2 | Valid Anagram | [02_ValidAnagrams](02_ValidAnagrams) |
+| 3 | Two Sum | [03_TwoSum](03_TwoSum) |
 
 ## Build and Run
 
-Example using GCC:
+Example using GCC (replace folder name as needed):
 
 ```bash
-cd 01_ContainsDuplicate
+cd 02_ValidAnagrams
 g++ -std=c++17 -O2 -Wall -Wextra -pedantic main.cpp -o main
 ./main
 ```

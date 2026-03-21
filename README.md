@@ -16,14 +16,18 @@ CPP_ProblemSolving/
 |   |-- 1_TwoSum/
 |   |-- 11_ContainerWithMostWater/
 |   |-- 20_ValidParentheses/
+|   |-- 88_MergeSortedArray/
 |   |-- 151_ReverseWordsInAString/
 |   |-- 191_Numberof1Bits/
+|   |-- 242_ValidAnagrams/
 |   `-- README.md
 |-- HackerRank/
 |   |-- 01_.cpp
 |   `-- README.md
 |-- NeetCode/
 |   |-- 01_ContainsDuplicate/
+|   |-- 02_ValidAnagrams/
+|   |-- 03_TwoSum/
 |   `-- README.md
 `-- README.md
 ```
@@ -47,6 +51,7 @@ CPP_ProblemSolving/
 |---|---------|--------|
 | 1 | Contains Duplicate | [NeetCode/01_ContainsDuplicate](NeetCode/01_ContainsDuplicate) |
 | 2 | Valid Anagram | [NeetCode/02_ValidAnagrams](NeetCode/02_ValidAnagrams) |
+| 3 | Two Sum | [NeetCode/03_TwoSum](NeetCode/03_TwoSum) |
 
 ### HackerRank
 

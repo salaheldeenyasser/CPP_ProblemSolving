@@ -39,12 +39,14 @@ CPP_ProblemSolving/
 | 20 | Valid Parentheses | [LeetCode/20_ValidParentheses](LeetCode/20_ValidParentheses) |
 | 151 | Reverse Words in a String | [LeetCode/151_ReverseWordsInAString](LeetCode/151_ReverseWordsInAString) |
 | 191 | Number of 1 Bits | [LeetCode/191_Numberof1Bits](LeetCode/191_Numberof1Bits) |
+| 242 | Valid Anagram | [LeetCode/242_ValidAnagrams](LeetCode/242_ValidAnagrams) |
 
 ### NeetCode
 
 | # | Problem | Folder |
 |---|---------|--------|
 | 1 | Contains Duplicate | [NeetCode/01_ContainsDuplicate](NeetCode/01_ContainsDuplicate) |
+| 2 | Valid Anagram | [NeetCode/02_ValidAnagrams](NeetCode/02_ValidAnagrams) |
 
 ### HackerRank
 

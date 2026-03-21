@@ -38,7 +38,12 @@ public:
 };
 #endif
 
-//
+// Solution 2: Two Pointers
+// Time Complexity: O(m+n) - We traverse both arrays once, which takes O(m+n) time.
+// Space Complexity: O(1) - We are merging the arrays in place, so we are not using any additional data structures, resulting in O(1) space complexity.
+#if 1
+
+#endif
 
 int main() {
     vector<int> nums1 = {1,2,3,0,0,0};

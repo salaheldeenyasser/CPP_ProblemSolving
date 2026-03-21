@@ -28,6 +28,9 @@ public:
 };
 #endif
 
+// Solution 2: Hash Map
+// Time Complexity: O(n) - We iterate through both strings once to populate the hash map, and then we iterate through the hash map to check if all counts are zero, which takes O(n) time.
+// Space Complexity: O(1) - The hash map will contain at most 26 entries (assuming only lowercase letters), so the space complexity is constant.
 #if 1
 class Solution {
 public:
